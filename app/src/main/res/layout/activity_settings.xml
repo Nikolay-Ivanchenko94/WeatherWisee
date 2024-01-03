@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/weathermain"
+    tools:context=".SettingsActivity.SettingsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/BtnBackSettings"
+            android:background="@drawable/iconback"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="30dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/background_white">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:id="@+id/ImageViewAccount"
+                   android:background="@drawable/iconaccount"
+                   android:layout_marginLeft="10dp"/>
+               
+               
+               
+
+
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/TextViewAccount"
+                   android:hint="@string/TextViewAccount"
+                   android:textSize="22sp"
+                   android:layout_marginLeft="60dp"
+                   android:textColorHint="@color/black"/>
+
+
+
+               <Button
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:id="@+id/BtnAccount"
+                   android:background="@drawable/iconnext"
+                   android:layout_marginLeft="290dp"
+                   android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:id="@+id/ViewAccount"
+                       android:background="@android:color/darker_gray"
+                       android:layout_below="@id/TextViewAccount"
+                       android:layout_marginTop="15dp"/>
+
+
+
+
+               <ImageView
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:id="@+id/ImageViewForgotPassword"
+                   android:background="@drawable/forgotpassword"
+                   android:layout_below="@id/ViewAccount"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginLeft="5dp"/>
+
+
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/TextViewForgotPassword"
+                   android:hint="@string/TextViewForgotPassword"
+                   android:layout_below="@id/ViewAccount"
+                   android:textSize="20sp"
+                   android:textColorHint="@color/black"
+                   android:layout_marginLeft="60dp"
+                   android:layout_marginTop="20dp"/>
+
+
+
+               <Button
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:id="@+id/BtnForgotPassword"
+                   android:layout_below="@id/ViewAccount"
+                   android:background="@drawable/iconnext"
+                   android:layout_marginLeft="290dp"
+                   android:layout_marginTop="20dp"/>
+
+
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:id="@+id/ViewForgotPassword"
+                   android:background="@android:color/background_dark"
+                   android:layout_below="@id/TextViewForgotPassword"
+                   android:layout_marginTop="20dp"/>
+               
+               
+               
+               
+               <ImageView
+                   android:layout_width="45dp"
+                   android:layout_height="45dp"
+                   android:id="@+id/ImageViewLanguagee"
+                   android:background="@drawable/languageicon"
+                   android:layout_below="@id/ViewForgotPassword"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="5dp"/>
+               
+               
+               
+               
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/TextViewLanguage"
+                   android:hint="@string/TextViewLanguage"
+                   android:layout_below="@id/ViewForgotPassword"
+                   android:textSize="20sp"
+                   android:textColorHint="@color/black"
+                   android:layout_marginLeft="65dp"
+                   android:layout_marginTop="15dp"/>
+               
+               
+               
+               
+               <Button
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:id="@+id/BtnLanguage"
+                   android:background="@drawable/iconnext"
+                   android:layout_below="@id/ViewForgotPassword"
+                   android:layout_marginLeft="290dp"
+                   android:layout_marginTop="20dp"/>
+               
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:id="@+id/ViewLanguage"
+                   android:layout_below="@id/TextViewLanguage"
+                   android:background="@android:color/darker_gray"
+                   android:layout_marginTop="20dp"/>
+
+
+
+
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:id="@+id/ImageViewLoggout"
+                   android:background="@drawable/loggouticon"
+                   android:layout_below="@id/ViewLanguage"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginLeft="5dp"/>
+
+
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/TextViewLoggout"
+                   android:hint="@string/TextViewLoggout"
+                   android:layout_below="@id/ViewLanguage"
+                   android:layout_marginLeft="60dp"
+                   android:layout_marginTop="15dp"
+                   android:textSize="20sp"
+                   android:textColorHint="@color/black"/>
+
+
+
+
+
+               <Button
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:id="@+id/BtnLoggout"
+                   android:layout_below="@id/ViewLanguage"
+                   android:background="@drawable/iconnext"
+                   android:layout_marginLeft="290dp"
+                   android:layout_marginTop="20dp"/>
+
+
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:id="@+id/ViewLoggout"
+                   android:layout_below="@id/TextViewLoggout"
+                   android:background="@android:color/darker_gray"
+                   android:layout_marginTop="20dp"/>
+
+
+
+
+
+               
+               
+               
+               
+
+
+
+
+
+           </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

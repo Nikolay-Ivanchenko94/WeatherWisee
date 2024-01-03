@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "634307578649",
+    "project_id": "weatherwise-a8d51",
+    "storage_bucket": "weatherwise-a8d51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634307578649:android:0246a76cb33c33b52a5388",
+        "android_client_info": {
+          "package_name": "com.example.weatherwise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS44tdlrCDa7_7QRogJvNI_JezakLdoyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

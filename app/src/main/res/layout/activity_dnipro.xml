@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/weathermain"
+    tools:context=".ActivityMainDnipro.ActivityDnipro">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/BtnBackMain"
+                android:background="@drawable/iconback"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/background_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ImageViewSunnyCloudy"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/sunnycloudy" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/TextViewTomorrowDnipro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/TextViewTomorrow"
+                            android:textSize="25sp"
+                            android:textColorHint="@color/white"
+                            android:layout_marginTop="15dp"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/TextViewDegreeMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="6°"
+                            android:textSize="50dp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextViewMostlyCloudyMain"
+                            android:hint="@string/TextViewMostlyCloudy"
+                            android:textSize="20sp"
+                            android:textColorHint="@color/white"
+                            android:textAlignment="center"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_color"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.444"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:id="@+id/ImageViewRainDnipro"
+                            android:background="@drawable/rainicon"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextViewDegreeRain"
+                            android:text="72%"
+                            android:textSize="20sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextViewRainMainDnipro"
+                            android:hint="@string/TextViewRain"
+                            android:textSize="20sp"
+                            android:textColorHint="@color/white"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.222">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/ImageViewWindy"
+                            android:background="@drawable/iconwindy"/>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextViewWindyDegree"
+                            android:text="3 M/C"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="5dp"/>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextViewWindyMain"
+                            android:hint="@string/TextViewWindy"
+                            android:textSize="20sp"
+                            android:textColorHint="@color/white"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:background="@drawable/background_color">
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/ImageViewHumidityMain"
+                            android:background="@drawable/humidityicon"
+                            android:layout_marginLeft="35dp"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextViewHumidityDegreeMain"
+                            android:text="79%"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="5dp"/>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextViewHumidityMainDnipro"
+                            android:hint="@string/TextViewHumidity"
+                            android:textColorHint="@color/white"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="10dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

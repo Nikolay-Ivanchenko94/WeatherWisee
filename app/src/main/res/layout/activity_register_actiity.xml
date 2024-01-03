@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weathermain"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity.RegisterActiity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/BtnBackLogin"
+            android:background="@drawable/iconback"
+            android:layout_marginTop="20dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardCornerRadius="30dp"
+       app:cardElevation="20dp"
+       android:layout_margin="20dp"
+       android:background="@drawable/background_white"
+       android:layout_marginTop="10dp">
+
+
+
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="20dp">
+
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/TextViewRegister"
+                  android:hint="@string/TextViewRegistration"
+                  android:textSize="25sp"
+                  android:textColorHint="@color/black"
+                  android:layout_marginLeft="100dp"/>
+              
+              
+              
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/TextViewSurnName"
+                  android:hint="@string/TextViewEnterSurnName"
+                  android:layout_marginTop="40dp"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"/>
+              
+              
+              
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/EditTextSurnName"
+                  android:hint="@string/EditTextSurnName"
+                  android:layout_below="@id/TextViewSurnName"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"/>
+              
+              
+              
+              
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/TextViewEmail"
+                  android:hint="@string/TextViewEnterEmail"
+                  android:layout_below="@id/EditTextSurnName"
+                  android:layout_marginTop="5dp"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"/>
+
+
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/EditTextEmail"
+                  android:text="E-mail"
+                  android:layout_below="@id/TextViewEmail"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"/>
+
+
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/TextViewPsw"
+                  android:hint="@string/TextViewEnterPsw"
+                  android:layout_below="@id/EditTextEmail"
+                  android:layout_marginTop="5dp"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"/>
+
+
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/EditTextPsw"
+                  android:layout_below="@id/TextViewPsw"
+                  android:hint="@string/EditTextPsw"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"/>
+
+
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/TextViewReturnPsw"
+                  android:hint="@string/TextViewReturnPsw"
+                  android:layout_below="@id/EditTextPsw"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"
+                  android:layout_marginTop="5dp"/>
+
+
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/EditTextReturnPsw"
+                  android:hint="@string/EditTextPsw"
+                  android:layout_below="@id/TextViewReturnPsw"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"/>
+
+
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/TextViewCity"
+                  android:layout_below="@id/EditTextReturnPsw"
+                  android:hint="@string/TextViewCity"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"
+                  android:layout_marginTop="5dp"/>
+
+
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/EditTextCity"
+                  android:hint="@string/EditTextCity"
+                  android:layout_below="@id/TextViewCity"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"/>
+
+
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/TextViewCountryCode"
+                  android:hint="@string/TextViewCountryCode"
+                  android:layout_below="@id/EditTextCity"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"
+                  android:layout_marginTop="5dp"/>
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/EdiTextCountryCode"
+                  android:hint="@string/EditTextCountryCode"
+                  android:layout_below="@id/TextViewCountryCode"
+                  android:textSize="20sp"
+                  android:textColorHint="@color/black"/>
+
+
+
+
+              <Button
+                  android:layout_width="100dp"
+                  android:layout_height="25dp"
+                  android:id="@+id/BtnRegister"
+                  android:layout_below="@id/EdiTextCountryCode"
+                  android:hint="@string/BtnRegistration"
+                  android:layout_marginTop="10dp"
+                  android:textColorHint="@color/white"
+                  android:background="@drawable/background_blue"
+                  android:minWidth="@dimen/cardview_compat_inset_shadow"
+                  android:minHeight="@dimen/cardview_compat_inset_shadow"
+                  android:layout_marginLeft="100dp"/>
+
+                  
+                  
+
+
+          </RelativeLayout>
+
+       </LinearLayout>
+
+
+   </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>

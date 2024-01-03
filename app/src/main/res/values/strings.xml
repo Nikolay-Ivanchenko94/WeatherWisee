@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">WeatherWise</string>
+    <string name="TextViewSunny">Сонячно</string>
+    <string name="TextViewSaturday">Субота 30 грудня | 12:00</string>
+    <string name="TextViewRain">Дощ</string>
+    <string name="TextViewWindy">Вітер</string>
+    <string name="TextViewHumidity">Вологість</string>
+    <string name="TextViewYesterday">Сьогодні</string>
+    <string name="BtnNext7Days">Наступні  7 днів > </string>
+    <string name="title_activity_main_dnipro">ActivityMainDnipro</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="TextViewTomorrow">Завтра</string>
+    <string name="TextViewMostlyCloudy">Переважно хмарно</string>
+    <string name="TextViewLoginRegistration">Вхід / Реєстрація</string>
+    <string name="TextViewEnterEmail">Введіть  E-mail</string>
+    <string name="TextViewAccount">Акаунт</string>
+    <string name="TextViewForgotPassword">Восстановити пароль</string>
+    <string name="TextViewLanguage">Мова</string>
+    <string name="TextViewLoggout">Увійти</string>
+    <string name="TextViewEnterPsw">Введіть Пароль</string>
+    <string name="EditTextPsw">Пароль</string>
+    <string name="BtnLogin">Увійти</string>
+    <string name="BtnRegistration">Реєстрація</string>
+    <string name="ChecBox">Запам\'ятати мене</string>
+    <string name="TextViewEnterSurnName">Введіть Ім\'я та Прізвище</string>
+    <string name="EditTextSurnName">Ім\'я та Прізвище</string>
+    <string name="TextViewRegistration">Реєстрація</string>
+    <string name="TextViewReturnPsw">Введіть повторно пароль</string>
+    <string name="TextViewCity">Введіть місто</string>
+    <string name="EditTextCity">Місто</string>
+    <string name="TextViewCountryCode">Введіть Код країни</string>
+    <string name="EditTextCountryCode">Код країни</string>
+
+
+</resources>
