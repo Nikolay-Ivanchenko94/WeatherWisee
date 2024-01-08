@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">WeatherWise</string>
+    <string name="TextViewSunny">Sloneczny</string>
+    <string name="TextViewSaturday">Sobota 30 grudnia | 12:00</string>
+    <string name="TextViewRain">Deszcs</string>
+    <string name="TextViewWindy">Wiatr</string>
+    <string name="TextViewHumidity">Wilgotnocs</string>
+    <string name="TextViewYesterday">Dzisiaj</string>
+    <string name="BtnNext7Days">Nastepne 7 dni</string>
+    <string name="title_activity_main_dnipro">Aktivitymaindnipro</string>
+    <string name="TextViewTomorrow">juntro</string>
+    <string name="TextViewMostlyCloudy">Przewaznie pochmurno</string>
+    <string name="TextViewLoginRegistration">Rejectracja | Logowania</string>
+    <string name="TextViewEnterEmail">Wprowadz E-mail</string>
+    <string name="TextViewAccount">Konto</string>
+    <string name="TextViewForgotPassword">Zresetuje haslo</string>
+    <string name="TextViewLanguage">Jezyk</string>
+    <string name="TextViewLoggout">Zalogowac sie</string>
+    <string name="TextViewEnterPsw">Wprowadz haslo</string>
+    <string name="EditTextPsw">Haslo</string>
+    <string name="BtnLogin">Zalogowac sie</string>
+    <string name="BtnRegistration">Rejectraja</string>
+    <string name="ChecBox">Zapomnij o mnie</string>
+    <string name="TextViewEnterSurnName">Wpisz imie i nazwisko</string>
+    <string name="EditTextSurnName">Imie i Nazwisko</string>
+    <string name="TextViewRegistration">Rejectraja</string>
+    <string name="TextViewReturnPsw">Ponownie wprowadz haslo</string>
+    <string name="TextViewCity">Ponownie miasto</string>
+    <string name="EditTextCity">Miasto</string>
+    <string name="TextViewCountryCode">Ponowie kod pocztowy</string>
+    <string name="EditTextCountryCode">Kod Pocztowy</string>
+
+
+</resources>
