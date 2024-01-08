@@ -1,17 +1,26 @@
-package com.example.weatherwise.ActivityMainDnipro;
+package com.example.weatherwise.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.weatherwise.ActivityMainDnipro.ActivityDnipro;
+import com.example.weatherwise.Adapters.HourlyAdapter;
+import com.example.weatherwise.Domains.Hourly;
 import com.example.weatherwise.R;
 import com.example.weatherwise.SettingsActivity.SettingsActivity;
 import com.example.weatherwise.databinding.ActivityMainDniproBinding;
 
+import java.util.ArrayList;
+
 public class ActivityMainDnipro extends AppCompatActivity {
+    private RecyclerView.Adapter adapterHourly;
+    private RecyclerView recyclerView;
 
     ActivityMainDniproBinding binding;
 
@@ -20,6 +29,7 @@ public class ActivityMainDnipro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ActivityMainDniproBinding binding = ActivityMainDniproBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        initRecyclerview();
 
 
         binding.BtnGeolocation.setOnClickListener(new View.OnClickListener() {
@@ -73,5 +83,20 @@ public class ActivityMainDnipro extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void initRecyclerview() {
+        ArrayList<Hourly> items = new ArrayList<>();
+        items.add(new Hourly(2, "17:00", "cloudy"));
+        items.add(new Hourly(4, "16:00", "sun"));
+        items.add(new Hourly(1, "15:00", "wind"));
+        items.add(new Hourly(7, "14:00", "rainy"));
+        items.add(new Hourly(1, "13:00", "snow"));
+        items.add(new Hourly(3, "12:00", "storm"));
+
+        recyclerView=findViewById(R.id.RecyClerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,true));
+        adapterHourly= new HourlyAdapter(items);
+        recyclerView.setAdapter(adapterHourly);
     }
 }

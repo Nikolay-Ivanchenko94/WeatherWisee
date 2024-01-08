@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/weathermain"
-    tools:context=".ActivityMainDnipro.ActivityMainDnipro">
+    android:background="@drawable/weather"
+    tools:context=".Activities.ActivityMainDnipro">
 
 <ScrollView
     android:layout_width="match_parent"
@@ -237,13 +237,23 @@
                    android:layout_marginTop="5dp"/>
            </RelativeLayout>
 
-        </LinearLayout>
-
-
 
         </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:id="@+id/RecyClerView"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        </LinearLayout>
+
 
     
 </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
