@@ -8,9 +8,6 @@
     <string name="TextViewYesterday">Сьогодні</string>
     <string name="BtnNext7Days">Наступні  7 днів > </string>
     <string name="title_activity_main_dnipro">ActivityMainDnipro</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="TextViewTomorrow">Завтра</string>
     <string name="TextViewMostlyCloudy">Переважно хмарно</string>
     <string name="TextViewLoginRegistration">Вхід / Реєстрація</string>
@@ -32,6 +29,16 @@
     <string name="EditTextCity">Місто</string>
     <string name="TextViewCountryCode">Введіть Код країни</string>
     <string name="EditTextCountryCode">Код країни</string>
+    <string name="TextViewResetPassword" translatable="false">Восстановить пароль</string>
+    <string name="TextViewDnipro" translatable="false">Дніпро</string>
+    <string name="TextViewOdessa" translatable="false">Одеса</string>
+    <string name="TextViewWindyText" translatable="false">Вітряно</string>
+    <string name="TextViewTuesday" translatable="false">Вівторок 9 грудня | 12:00</string>
+    <string name="TextViewStatus" translatable="false">Статус </string>
+    <string name="TextViewDay" translatable="false">День</string>
+    <string name="TextViewRainStorm" translatable="false">Дощ з грозою</string>
+    <string name="TextViewKiev" translatable="false">Київ</string>
+    <string name="TextViewSnow" translatable="false">Сніг</string>
 
 
 </resources>

@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.weatherwise.ActivityMainDnipro.ActivityMainDnipro;
+import com.example.weatherwise.ActivitiesDnipro.ActivityMainDnipro;
 import com.example.weatherwise.R;
 
 public class SplachScreenActivity extends AppCompatActivity {

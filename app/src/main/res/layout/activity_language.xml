@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/weathermain"
+    android:background="@drawable/weather"
     android:orientation="vertical"
     android:layout_gravity="center"
     tools:context=".SettingsActivity.LanguageActivity">
@@ -129,7 +129,7 @@
                     android:textSize="20sp"
                     android:textColorHint="@color/black"
                     android:layout_marginLeft="73dp"
-                    android:layout_marginTop="30dp"/>
+                    android:layout_marginTop="35dp"/>
 
 
 
@@ -150,7 +150,7 @@
                     android:id="@+id/ViewUkraine"
                     android:background="@android:color/darker_gray"
                     android:layout_below="@id/TextViewUkaine"
-                    android:layout_marginTop="25dp"/>
+                    android:layout_marginTop="20dp"/>
 
 
 
@@ -159,7 +159,48 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:id="@+id/ImageViewPoland"
-                    android:background="@drawable/iconpoland"/>
+                    android:background="@drawable/iconpoland"
+                    android:layout_below="@id/ViewUkraine"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="12dp"/>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TextViewPoland"
+                    android:text="Poland"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/ViewUkraine"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="25dp"/>
+
+
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/BtnPoland"
+                    android:layout_below="@id/ViewUkraine"
+                    android:background="@drawable/iconnext"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="35dp"/>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/ViewPoland"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@id/TextViewPoland"/>
+
+
 
 
 

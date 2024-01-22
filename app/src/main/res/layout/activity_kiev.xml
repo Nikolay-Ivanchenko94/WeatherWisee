@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather"
+    android:orientation="vertical"
+    tools:context=".ActivitiesKiev.ActivityKiev">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+                android:id="@+id/BtnBackMainKiev"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/iconback"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/background_color"
+                android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:id="@+id/ImageViewSunnyCloudy"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/iconrain" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/TextViewTomorrowKiev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:hint="@string/TextViewTomorrow"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/white"
+                        android:textSize="25sp" />
+
+
+
+                    <TextView
+                        android:id="@+id/TextViewDegreeMainKiev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="-2°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="50dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/TextViewRainKiev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/TextViewRain"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_color"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.444"
+                    android:orientation="vertical">
+
+
+
+                    <ImageView
+                        android:id="@+id/ImageViewRainKiev"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/rainicon" />
+
+
+                    <TextView
+                        android:id="@+id/TextViewDegreeRainKiev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="60%"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/TextViewRainMainKiev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:hint="@string/TextViewRain"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.222"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/ImageViewWindyKiev"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/iconwindy"/>
+
+
+                    <TextView
+                        android:id="@+id/TextViewWindyDegreeKiev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="5 M/C"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/TextViewWindyMainKiev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/TextViewWindy"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/background_color"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+
+
+
+                    <ImageView
+                        android:id="@+id/ImageViewHumidityMainKiev"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/humidityicon" />
+
+
+                    <TextView
+                        android:id="@+id/TextViewHumidityDegreeMainKie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="5dp"
+                        android:text="65%"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/TextViewHumidityMainKiev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="@string/TextViewHumidity"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/RecylerViewFutureKiev"
+                android:layout_marginTop="400dp"
+                android:nestedScrollingEnabled="true"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

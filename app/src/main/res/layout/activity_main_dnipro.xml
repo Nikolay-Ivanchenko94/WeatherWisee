@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/weather"
-    tools:context=".Activities.ActivityMainDnipro">
+    tools:context=".ActivitiesDnipro.ActivityMainDnipro">
 
 <ScrollView
     android:layout_width="match_parent"
@@ -36,17 +36,26 @@
            android:layout_height="30dp"
            android:id="@+id/BtnGeolocation"
            android:background="@drawable/geolocation"
-           android:layout_marginTop="10dp"
-           android:layout_marginLeft="10dp"/>
+           android:layout_marginTop="10dp"/>
 
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/TextViewDnipro"
+           android:hint="@string/TextViewDnipro"
+           android:textSize="25sp"
+           android:layout_marginTop="10dp"
+           android:textColorHint="@color/white"
+           android:gravity="center"/>
 
        <Button
            android:layout_width="25dp"
            android:layout_height="25dp"
            android:id="@+id/BtnSettings"
            android:background="@drawable/iconsettings"
-           android:layout_marginLeft="350dp"
-           android:layout_marginTop="10dp"/>
+           android:layout_marginLeft="360dp"
+           android:layout_marginTop="12dp"/>
 
 
    </RelativeLayout>
@@ -62,8 +71,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/TextViewSunnyDnipro"
                 android:hint="@string/TextViewSunny"
-                android:textSize="25sp"
-                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
                 android:textColorHint="@color/white"
                 android:textAlignment="center"/>
 
@@ -96,9 +105,21 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"/>
 
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+
+
+
+            </RelativeLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/background_color"
                 android:orientation="horizontal">
 
@@ -249,7 +270,43 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"/>
 
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="160dp"
+                android:background="@drawable/background_round"
+                android:id="@+id/BtnDnipro"/>
+
+            <Button
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="180dp"
+                android:background="@drawable/background_round"
+                android:id="@+id/BtnOdessa"/>
+
+
+            <Button
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="200dp"
+                android:background="@drawable/background_round"
+                android:id="@+id/BtnKiev"/>
+
+
+        </RelativeLayout>
+
+
         </LinearLayout>
+
 
 
     

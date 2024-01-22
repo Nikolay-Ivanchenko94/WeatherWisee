@@ -1,5 +1,6 @@
 package com.example.weatherwise.LoginActivity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -16,20 +17,24 @@ import com.example.weatherwise.RegisterActivity.RegisterActiity;
 import com.example.weatherwise.SettingsActivity.SettingsActivity;
 import com.example.weatherwise.databinding.ActivityLoginBinding;
 import com.example.weatherwise.databinding.ActivityMainDniproBinding;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
+    FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityLoginBinding binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        binding.BtnBackLogin.setOnClickListener(new View.OnClickListener() {
+        binding.BtnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, ActivityMainDniproBinding.class);
+                Intent intent = new Intent(LoginActivity.this,ActivityMainDniproBinding.class);
                 startActivity(intent);
             }
         });
@@ -64,6 +69,8 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(LoginActivity.this,"Пароль повинен містити від 5 символів",Toast.LENGTH_LONG).show();
                         EditTextPsw.setError("Надто слабкий пароль");
                         EditTextPsw.requestFocus();
+                    } else {
+                        loginUser(Email,Psw);
                     }
                 }
             }
@@ -91,5 +98,21 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void loginUser(String email, String psw) {
+        firebaseAuth.signInWithEmailAndPassword(email, psw).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    Toast.makeText(LoginActivity.this, "Ви увішйли зараз", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(LoginActivity.this, "Щось пішло не так", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(LoginActivity.this,ActivityMainDniproBinding.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
     }
 }

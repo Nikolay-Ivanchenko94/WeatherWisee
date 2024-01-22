@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.weatherwise.ActivityMainDnipro.ActivityMainDnipro;
+import com.example.weatherwise.ActivitiesDnipro.ActivityMainDnipro;
 import com.example.weatherwise.LoginActivity.LoginActivity;
-import com.example.weatherwise.R;
 import com.example.weatherwise.databinding.ActivitySettingsBinding;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -46,6 +45,8 @@ public class SettingsActivity extends AppCompatActivity {
         binding.BtnForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(SettingsActivity.this, ResetPasswordActivity.class);
+                startActivity(intent);
 
             }
         });
@@ -55,6 +56,8 @@ public class SettingsActivity extends AppCompatActivity {
         binding.BtnLanguage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(SettingsActivity.this, LanguageActivity.class);
+                startActivity(intent);
 
             }
         });

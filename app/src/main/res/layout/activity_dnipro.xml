@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:background="@drawable/weathermain"
-    tools:context=".ActivityMainDnipro.ActivityDnipro">
+    tools:context=".ActivitiesDnipro.ActivityDnipro.ActivityDnipro">
 
 
     <ScrollView
@@ -15,8 +15,10 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
 
         <RelativeLayout
@@ -25,12 +27,12 @@
 
 
             <Button
+                android:id="@+id/BtnBackMain"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:id="@+id/BtnBackMain"
-                android:background="@drawable/iconback"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginLeft="10dp"/>
+                android:background="@drawable/iconback" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,32 +64,31 @@
                             android:id="@+id/TextViewTomorrowDnipro"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/TextViewTomorrow"
-                            android:textSize="25sp"
-                            android:textColorHint="@color/white"
                             android:layout_marginTop="15dp"
+                            android:hint="@string/TextViewTomorrow"
                             android:textAlignment="center"
-                            />
+                            android:textColorHint="@color/white"
+                            android:textSize="25sp" />
 
                         <TextView
                             android:id="@+id/TextViewDegreeMain"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="6°"
-                            android:textSize="50dp"
-                            android:textColor="@color/white"
                             android:layout_marginTop="10dp"
-                            android:textAlignment="center"/>
+                            android:text="6°"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="50dp" />
 
 
                         <TextView
+                            android:id="@+id/TextViewMostlyCloudyMain"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/TextViewMostlyCloudyMain"
                             android:hint="@string/TextViewMostlyCloudy"
-                            android:textSize="20sp"
+                            android:textAlignment="center"
                             android:textColorHint="@color/white"
-                            android:textAlignment="center"/>
+                            android:textSize="20sp" />
 
 
                     </LinearLayout>
@@ -108,120 +109,124 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/ImageViewRainDnipro"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:layout_marginLeft="15dp"
-                            android:id="@+id/ImageViewRainDnipro"
-                            android:background="@drawable/rainicon"/>
+                            android:background="@drawable/rainicon" />
 
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:id="@+id/TextViewDegreeRain"
-                            android:text="72%"
-                            android:textSize="20sp"
-                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
-                            android:textColor="@color/white"/>
+                            android:layout_marginTop="5dp"
+                            android:text="72%"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
 
 
                         <TextView
+                            android:id="@+id/TextViewRainMainDnipro"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/TextViewRainMainDnipro"
+                            android:layout_marginLeft="15dp"
                             android:hint="@string/TextViewRain"
-                            android:textSize="20sp"
                             android:textColorHint="@color/white"
-                            android:layout_marginLeft="15dp"/>
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
                         android:layout_margin="8dp"
-                        android:layout_weight="0.222">
+                        android:layout_weight="0.222"
+                        android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/ImageViewWindy"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:id="@+id/ImageViewWindy"
-                            android:background="@drawable/iconwindy"/>
-
+                            android:background="@drawable/iconwindy" />
 
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:id="@+id/TextViewWindyDegree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
                             android:text="3 M/C"
-                            android:textSize="20sp"
                             android:textColor="@color/white"
-                            android:layout_marginTop="5dp"/>
-
+                            android:textSize="20sp" />
 
 
                         <TextView
+                            android:id="@+id/TextViewWindyMain"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/TextViewWindyMain"
                             android:hint="@string/TextViewWindy"
-                            android:textSize="20sp"
-                            android:textColorHint="@color/white"/>
+                            android:textColorHint="@color/white"
+                            android:textSize="20sp" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
+                        android:background="@drawable/background_color"
                         android:orientation="vertical"
-                        android:padding="8dp"
-                        android:background="@drawable/background_color">
+                        android:padding="8dp">
 
 
                         <ImageView
+                            android:id="@+id/ImageViewHumidityMain"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:id="@+id/ImageViewHumidityMain"
-                            android:background="@drawable/humidityicon"
-                            android:layout_marginLeft="35dp"/>
+                            android:layout_marginLeft="45dp"
+                            android:background="@drawable/humidityicon" />
 
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:id="@+id/TextViewHumidityDegreeMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginTop="5dp"
                             android:text="79%"
-                            android:textSize="20sp"
                             android:textColor="@color/white"
-                            android:layout_marginLeft="35dp"
-                            android:layout_marginTop="5dp"/>
-
+                            android:textSize="20sp" />
 
 
                         <TextView
+                            android:id="@+id/TextViewHumidityMainDnipro"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/TextViewHumidityMainDnipro"
+                            android:layout_marginLeft="20dp"
                             android:hint="@string/TextViewHumidity"
                             android:textColorHint="@color/white"
-                            android:textSize="20sp"
-                            android:layout_marginLeft="10dp"/>
-
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
                 </LinearLayout>
 
-
             </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/RecylerViewFuture"
+                android:layout_marginTop="380dp"
+                android:nestedScrollingEnabled="true"/>
 
 
         </RelativeLayout>
 
-
     </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

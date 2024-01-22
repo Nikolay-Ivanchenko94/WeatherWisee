@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +17,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherWise"
         tools:targetApi="31">
+        <activity
+            android:name=".ActivitiesKiev.ActivityKiev"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitiesKiev.ActivityMainKiev"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitiesOdessa.ActivityOdessa"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitiesOdessa.ActivityMainOdessa"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity.ResetPasswordActivity"
+            android:exported="false" />
         <activity
             android:name=".SettingsActivity.LanguageActivity"
             android:exported="false" />
@@ -28,9 +51,9 @@
             android:name=".LoginActivity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ActivityMainDnipro.ActivityDnipro"
+            android:name=".ActivitiesDnipro.ActivityDnipro.ActivityDnipro"
             android:exported="false" />
-        <activity android:name=".ActivityMainDnipro.ActivityMainDnipro" />
+        <activity android:name=".ActivitiesDnipro.ActivityMainDnipro" />
         <activity
             android:name=".SplachScreen.SplachScreenActivity"
             android:exported="true">
@@ -40,6 +63,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB7d6Do8bmV97Ze3-8vua_smcBzmmcTkIk" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />

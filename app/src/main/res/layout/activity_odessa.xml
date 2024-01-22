@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/weathermain"
+    tools:context=".ActivitiesOdessa.ActivityOdessa">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+                android:id="@+id/BtnBackMainOdessa"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/iconback"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/background_color"
+                android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/ImageViewSunnyCloudy"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/synny_cloydy_storm" />
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/TextViewTomorrowOdessa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:hint="@string/TextViewTomorrow"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/white"
+                        android:textSize="25sp" />
+
+
+
+                    <TextView
+                        android:id="@+id/TextViewDegreeMainOdessa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="0°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="50dp" />
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/TextViewMostlyCloudyMainOdessa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/TextViewRainStorm"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_color"
+                android:orientation="horizontal">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.444"
+                    android:orientation="vertical">
+
+
+
+                    <ImageView
+                        android:id="@+id/ImageViewRainOdessa"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/rainicon" />
+
+
+                    <TextView
+                        android:id="@+id/TextViewDegreeRainOdessa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="80%"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/TextViewRainMainOdessa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:hint="@string/TextViewRain"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.222"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/ImageViewWindyOdessa"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/iconwindy"/>
+
+
+                    <TextView
+                        android:id="@+id/TextViewWindyDegreeOdessa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="3 M/C"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/TextViewWindyMainOdessa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/TextViewWindy"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/background_color"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/ImageViewHumidityMainOdessa"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/humidityicon" />
+
+
+                    <TextView
+                        android:id="@+id/TextViewHumidityDegreeMainOdessa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="5dp"
+                        android:text="79%"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/TextViewHumidityMainOdessa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="@string/TextViewHumidity"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+
+
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/RecylerViewFutureOdessa"
+                android:layout_marginTop="400dp"
+                android:nestedScrollingEnabled="true"/>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
